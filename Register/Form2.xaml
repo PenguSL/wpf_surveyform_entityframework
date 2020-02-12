@@ -1,0 +1,50 @@
+﻿<Window x:Class="Register.Form2"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+      mc:Ignorable="d" 
+      Title="Form2" Height="600" Width="1080" WindowStartupLocation="CenterScreen" WindowState="Maximized">
+
+    <Grid Background="#FFDADADA">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="705*"/>
+            <ColumnDefinition Width="367*"/>
+        </Grid.ColumnDefinitions>
+        <Border Margin="15,35" MinWidth="400" Background="White" VerticalAlignment="Center" Padding="30" CornerRadius="10" MaxWidth="800" Grid.ColumnSpan="2">
+            <Border.Effect>
+                <DropShadowEffect BlurRadius="30" Color="LightGray" ShadowDepth="0"/>
+            </Border.Effect>
+            <StackPanel>
+                <TextBlock Text="SAD-CRY.2020" FontSize="30" FontWeight="Bold" Margin="0 0 0 20"/>
+
+                <Grid Margin="0 0 0 20">
+                    <Button Content="Form 2 - System Requirement PC" HorizontalAlignment="Left"/>
+                    <!--<Button Content="Login" HorizontalAlignment="Right" Style="{StaticResource MaterialDesignFlatButton}"/> -->
+                </Grid>
+
+                <ComboBox materialDesign:HintAssist.Hint="Operating System"  Margin="0 5">
+                    <ComboBoxItem>Windows 8 or Higher</ComboBoxItem>
+                    <ComboBoxItem>Mac OS</ComboBoxItem>
+                    <ComboBoxItem>Linux</ComboBoxItem>
+                </ComboBox>
+                <ComboBox materialDesign:HintAssist.Hint="Processor" Margin="0 5">
+                    <ComboBoxItem>AMD</ComboBoxItem>
+                    <ComboBoxItem>Intel</ComboBoxItem>
+                </ComboBox>
+                <ComboBox materialDesign:HintAssist.Hint="Graphics"  Margin="0 5">
+                    <ComboBoxItem>NVidia GetForce</ComboBoxItem>
+                    <ComboBoxItem>AMD Readon</ComboBoxItem>
+                </ComboBox>
+                <TextBox materialDesign:HintAssist.Hint="V-RAM" Style="{StaticResource MaterialDesignFloatingHintTextBox}" Margin="0 5"/>
+                <!-- <PasswordBox materialDesign:HintAssist.Hint="Password" Style="{StaticResource MaterialDesignFloatingHintPasswordBox}" Margin="0 5"/>
+                <PasswordBox materialDesign:HintAssist.Hint="Confirm Password" Style="{StaticResource MaterialDesignFloatingHintPasswordBox}" Margin="0 5"/> -->
+                <TextBox materialDesign:HintAssist.Hint="Stored Memory" Style="{StaticResource MaterialDesignFloatingHintTextBox}" Margin="0 5"/>
+                <TextBox materialDesign:HintAssist.Hint="Storage" Style="{StaticResource MaterialDesignFloatingHintTextBox}" Margin="0 5"/>
+                <Button Content="Next" Margin="0 20" Click="Button_Click"/>
+            </StackPanel>
+        </Border>
+    </Grid>
+
+</Window>

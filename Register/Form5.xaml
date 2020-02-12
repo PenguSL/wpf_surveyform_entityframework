@@ -1,0 +1,38 @@
+﻿<Window x:Class="Register.Form5"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+      mc:Ignorable="d" 
+      Title="Form2" Height="600" Width="1080" WindowStartupLocation="CenterScreen" WindowState="Maximized">
+
+    <Grid Background="#FFDADADA">
+        <Border Margin="15" MinWidth="400" Background="White" VerticalAlignment="Center" Padding="30" CornerRadius="10" MaxWidth="800">
+            <Border.Effect>
+                <DropShadowEffect BlurRadius="30" Color="LightGray" ShadowDepth="0"/>
+            </Border.Effect>
+            <StackPanel>
+                <TextBlock Text="SAD-CRY.2020" FontSize="30" FontWeight="Bold" Margin="0 0 0 20"/>
+
+                <Grid Margin="0 0 0 20">
+                    <Button Content="Form 5 -Sad Cry 5 Story Missions" HorizontalAlignment="Left"/>
+                    <Button Content="Back" HorizontalAlignment="Right" Style="{StaticResource MaterialDesignFlatButton}"/> 
+                </Grid>
+
+                <TextBlock Text="These are the main story missions you will complete in Far Cry 5. The story is non-linear and you can pick any story 
+mission in any region in Hope County. 
+                           These story missions will take place on 3 big regions and 2 small regions." FontSize="12" />
+                <TextBox materialDesign:HintAssist.Hint="Liberate Hope County Jail" Style="{StaticResource MaterialDesignFloatingHintTextBox}" Margin="0 5"/>
+                <TextBox materialDesign:HintAssist.Hint="Clean Water Act" Style="{StaticResource MaterialDesignFloatingHintTextBox}" Margin="0 5"/>
+                <TextBox materialDesign:HintAssist.Hint=" Here Kitty, Kitty" Style="{StaticResource MaterialDesignFloatingHintTextBox}" Margin="0 5"/>
+                <TextBox materialDesign:HintAssist.Hint=" Whiskey River" Style="{StaticResource MaterialDesignFloatingHintTextBox}" Margin="0 5"/>
+                <!-- <PasswordBox materialDesign:HintAssist.Hint="Password" Style="{StaticResource MaterialDesignFloatingHintPasswordBox}" Margin="0 5"/>
+                <PasswordBox materialDesign:HintAssist.Hint="Confirm Password" Style="{StaticResource MaterialDesignFloatingHintPasswordBox}" Margin="0 5"/> -->
+                <TextBox materialDesign:HintAssist.Hint="Friendly Skies" Style="{StaticResource MaterialDesignFloatingHintTextBox}" Margin="0 5"/>
+                <Button Content="Submit" Margin="0 20" Click="Button_Click"/>
+            </StackPanel>
+        </Border>
+    </Grid>
+
+</Window>
